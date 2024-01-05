@@ -1,4 +1,11 @@
+#!/usr/bin/python3
+"""
+function that prints a triangle
+"""
+
+
 def pascal_triangle(n):
+    """draws a triangle based on the number that is passed through as n"""
     if n <= 0:
         return []
 
@@ -10,4 +17,3 @@ def pascal_triangle(n):
         triangle.append(row)
 
     return triangle
-
