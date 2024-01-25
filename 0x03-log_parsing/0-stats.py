@@ -19,7 +19,7 @@ def print_statistics():
     - Number of processed lines
     """
     print("File size:", total_size)
-    sorted_status_codes = sorted(status_codes.keys)
+    sorted_status_codes = sorted(status_codes.keys())
     for code in sorted_status_codes:
         print("{}: {}".format(code, status_codes[code]))
 
@@ -55,6 +55,8 @@ def main():
                 print_statistics()
     except KeyboardInterrupt:
         print("\nKeyboard interrupt detected. Exiting gracefully.")
+    except BrokenPipeError:
+        pass
     finally:
         print("\nFinal statistics:")
         print_statistics()
@@ -64,3 +66,5 @@ if __name__ == "__main__":
     total_size = 0
     status_codes = {}
     valid_status_codes = {200, 301, 400, 401, 403, 404, 405, 500}
+
+    main()
