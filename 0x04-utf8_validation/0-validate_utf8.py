@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """checks if the valid data is UTF8 valid or not
 """
 
