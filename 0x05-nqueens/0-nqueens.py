@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""module that solves the nQueens problem"""
 import sys
 
 """checks if its safe"""
