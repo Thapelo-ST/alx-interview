@@ -1,0 +1,3 @@
+# Star Wars Characters Viewer
+
+This script, `0-starwars_characters.js`, fetches and displays character names from a Star Wars movie using the Star Wars API. Ensure Node.js is installed, and use the provided Movie ID as a command-line argument. The script adheres to semistandard coding rules, including StandardJS plus semicolons. It requires the `request` module, which can be installed via `npm install request`. Execute the script with './0-starwars_characters.js <Movie ID>'. It outputs character names in the order specified by the API. The README serves as a concise guide, providing essential information on installation and usage in just 100 words.
