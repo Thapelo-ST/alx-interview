@@ -1,0 +1,3 @@
+# 2D Matrix Rotation Tool
+
+This Python script provides a simple and efficient solution to rotate a 2D matrix 90 degrees clockwise in-place. The rotate_2d_matrix function transposes the matrix by swapping elements across the main diagonal and then reverses each row. The script is designed to work with square matrices and modifies the input matrix directly, ensuring an optimal and space-efficient rotation operation. This tool is suitable for applications where in-place matrix rotation is required, such as image processing or computational geometry. The code is well-documented and easy to integrate into your projects, making matrix manipulation a breeze.
