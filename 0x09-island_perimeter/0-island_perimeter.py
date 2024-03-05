@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """island parameter returing the islad found in the grid"""
 
+
 def island_perimeter(grid):
     """island parameter returing the islad found in the grid"""
     if not grid or not grid[0]:
