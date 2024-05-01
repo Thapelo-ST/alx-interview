@@ -8,7 +8,7 @@
 """
 
 
-def makingChange(coins, total):
+def makeChange(coins, total):
     """
         Algorithm for making change.
         Returns the minimum number of coins needed to make change for the
