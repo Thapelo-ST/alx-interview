@@ -14,13 +14,18 @@ def is_prime(num):
 
 def get_primes(n):
     """
-    for ervery prime number thats
+    for every prime number that's
     returned from is_prime gets stored here
     """
-    primes = []
-    for i in range(1, n + 1):
-        if is_prime(i):
-            primes.append(i)
+    sieve = [True] * (n + 1)
+    p = 2
+    while p * p <= n:
+        if sieve[p]:
+            for i in range(p * p, n + 1, p):
+                sieve[i] = False
+        p += 1
+
+    primes = [p for p in range(2, n+1) if sieve[p]]
     return primes
 
 
