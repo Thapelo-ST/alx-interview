@@ -38,9 +38,11 @@ def isWinner(x, nums):
     maria_wins = 0
     ben_wins = 0
 
+    max_num = max(nums)
+    primes = get_primes(max_num)
+
     for n in nums:
-        primes = get_primes(n)
-        total_moves = len(primes)
+        total_moves = len([p for p in primes if p <= n])
 
         if total_moves % 2 == 0:
             ben_wins += 1
